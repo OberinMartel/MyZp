@@ -1,0 +1,31 @@
+﻿<Window x:Class="MyZp.Windows.WindowUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyZp.Windows"
+        mc:Ignorable="d"
+        Title="WindowUser"  MinHeight="720" MinWidth="1280">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="#5D5C3E"></Grid>
+        <Grid Grid.Row="1" Background="#F4F8F7"></Grid>
+        <Grid Grid.Row="2" Background="#5D5C3E"></Grid>
+
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Text="My Money" FontSize="48" Foreground="#F4F8F7" ></TextBlock>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Image Source="/Resources/HomePage.png" Margin="5" x:Name="ImgHome" PreviewMouseLeftButtonDown="ImgHome_PreviewMouseLeftButtonDown"></Image>
+            <Image Source="/Resources/ProfilePage.png" Margin="5" x:Name="ImgProfile" PreviewMouseLeftButtonDown="ImgProfile_PreviewMouseLeftButtonDown"></Image>
+            <Image Source="/Resources/WorkPage.png" Margin="5" x:Name="ImgWork" PreviewMouseLeftButtonDown="ImgWork_PreviewMouseLeftButtonDown"></Image>
+            <Image Source="/Resources/FriendsPage.png" Margin="5" x:Name="ImgFriends" PreviewMouseLeftButtonDown="ImgFriends_PreviewMouseLeftButtonDown"></Image>
+            <Image Source="/Resources/Exit.png" Margin="5" x:Name="ImgExit" PreviewMouseLeftButtonDown="ImgExit_PreviewMouseLeftButtonDown"></Image>
+        </StackPanel>
+
+        <Frame ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame"></Frame>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="409cdf44097c4e1b953e157ad180bba6" Name="Diagram1">
+        <EntityTypeShape EntityType="KR_VPKSModel.Friends" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KR_VPKSModel.FriendStatus" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KR_VPKSModel.Shifts" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KR_VPKSModel.ShiftTypes" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KR_VPKSModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KR_VPKSModel.Users" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KR_VPKSModel.UserShifts" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="KR_VPKSModel.FK_Friends_FriendStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="KR_VPKSModel.FK_Friends_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="KR_VPKSModel.FK_Friends_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="KR_VPKSModel.FK_Shifts_ShiftTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="KR_VPKSModel.FK_UserShifts_ShiftTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="KR_VPKSModel.FK_UserShifts_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
